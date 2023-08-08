@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+
+.contanier{
+    width: 100%;
+    height: 100vh;
+    background-color: #030a23;
+}
+header nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding-top: 20px;
+    z-index: 100;
+    position: relative;
+}
+header nav .logo{
+    font-size: 35px;
+    font-weight: bold;
+    background: linear-gradient(to left, #ffb040 , #f9ed32);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+header nav .nav-links a{
+    color: #ffb040;
+    margin-left: 50px;
+    position: relative;
+}
+header nav .nav-links a::after{
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(to left, #ffb040 , #f9ed32);
+    transition: 0.3s;
+}
+header nav .nav-links a:hover::after{
+    width: 100%;
+}
+
+.content{
+    padding-top: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content h1{
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+    
+
+.content p{
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+.home-img {
+    padding-top: 15px;
+}
+.home-img img{
+    width: 500;
+    size: 100;
+}
+
+.soial-links{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    right: 20px;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+}
+.soial-links a{
+    color: #ffb040;
+    font-size: 22px;
+    transition: 0.4s;
+}
+.soial-links a:hover{
+    transform: scale(1.4);
+}
+.soial-links span{
+    color: #ffb040;
+    font-weight: 500;
+    transform: rotate(90deg);
+    margin-bottom: 40px;
+}
+
+
+
+.btn {
+    padding-top: 5px;
+    display: inline-block;
+    border-radius: 30px;
+    background-color:#ffb040;
+    border: none;
+    color: #333131;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    padding: 20px;
+    width: 150px;
+    height: 50px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+  }
+  
+  .btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+ } 
+  .btn:hover{
+    background: #f9ed32;
+ }
